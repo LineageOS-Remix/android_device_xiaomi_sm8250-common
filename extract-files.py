@@ -41,8 +41,16 @@ blob_fixups: blob_fixups_user_type = {
         .add_needed('libcrypto_shim.so'),
     'vendor/lib64/mediadrm/libwvdrmengine.so': blob_fixup()
         .add_needed('libcrypto_shim.so'),
+    (
+        'vendor/lib64/soundfx/libswvqe.so',
+        'vendor/lib64/soundfx/libswgamedap.so',
+        'vendor/lib64/soundfx/libswdap.so',
+        'vendor/lib/soundfx/libswvqe.so',
+        'vendor/lib/soundfx/libswgamedap.so',
+        'vendor/lib/soundfx/libswdap.so',
+    ): blob_fixup()
+        .replace_needed('audio.primary.mediatek.so', 'audio.primary.kona.so\x00\x00\x00\x00'),
 }  # fmt: skip
-
 
 def lib_fixup_vendor_suffix(lib: str, partition: str, *args, **kwargs):
     return f'{lib}_{partition}' if partition == 'vendor' else None
