@@ -102,3 +102,4 @@ on early-init
 # Touch
 on boot
     chown system system /sys/devices/virtual/touch/touch_dev/bump_sample_rate
+    chmod 0660 /sys/devices/virtual/touch/touch_dev/bump_sample_rate
