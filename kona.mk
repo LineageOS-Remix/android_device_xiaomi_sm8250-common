@@ -171,6 +171,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.memtrack-service
 
+# Dolby
+$(call inherit-product, hardware/dolby/dolby.mk)
+
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm-service.clearkey
@@ -250,6 +253,7 @@ $(call soong_config_set,lineage_health,charging_control_supports_bypass,false)
 
 # Media configs
 PRODUCT_PACKAGES += \
+    media_codecs.xml \
     media_codecs_c2.xml \
     media_codecs_performance_c2.xml \
     video_system_specs.json
