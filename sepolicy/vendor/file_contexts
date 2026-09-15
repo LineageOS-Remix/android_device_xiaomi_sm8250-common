@@ -69,7 +69,7 @@
 /data/vendor/thermal(/.*)?                                                                          u:object_r:vendor_thermal_data_file:s0
 
 # Touch
-/vendor/bin/hw/vendor\.lineage\.touch@1\.0-service\.xiaomi                                          u:object_r:hal_lineage_touch_default_exec:s0
+/vendor/bin/hw/vendor\.lineage\.touch-service\.xiaomi                                               u:object_r:hal_lineage_touch_default_exec:s0
 
 # Ultrasound devices
 /dev/elliptic[0-9]+                                                                                 u:object_r:ultrasound_device:s0
