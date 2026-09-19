@@ -25,8 +25,6 @@ blob_fixups: blob_fixups_user_type = {
         .add_needed('libinput_shim.so'),
     'system_ext/lib64/libwfdservice.so': blob_fixup()
         .replace_needed('android.media.audio.common.types-V2-cpp.so', 'android.media.audio.common.types-V4-cpp.so'),
-    'vendor/bin/hw/vendor.dolby.hardware.dms@2.0-service': blob_fixup()
-        .add_needed('libstagefright_foundation-v33.so'),
     'vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc': blob_fixup()
         .regex_replace('writepid /dev/cpuset/foreground/tasks', 'task_profiles ProcessCapacityHigh'),
     'vendor/etc/init/android.hardware.neuralnetworks@1.3-service-qti.rc': blob_fixup()
