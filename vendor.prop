@@ -175,6 +175,15 @@ vendor.display.qdcm.mode_combine=1
 vendor.display.use_layer_ext=0
 vendor.display.use_smooth_motion=0
 
+# Dolby
+ro.vendor.audio.dolby.dax.version=DAX3_3.6
+ro.vendor.audio.dolby.dax.support=true
+ro.vendor.audio.dolby.fade_switch=true
+ro.vendor.audio.dolby.surround.enable=true
+ro.vendor.audio.dolby.vision.support=true
+ro.vendor.display.dolbyvision.support=true
+ro.vendor.dolby.dax.version=DAX3_3.6.1.6_r1
+
 # DRM
 drm.service.enabled=true
 
@@ -211,6 +220,7 @@ ro.hardware.keystore_desede=true
 
 # Media
 debug.stagefright.c2inputsurface=-1
+debug.stagefright.omx_default_rank=0
 ro.odm.build.media_performance_class=30
 
 # NFC
