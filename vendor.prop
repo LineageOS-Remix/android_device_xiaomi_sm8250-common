@@ -139,6 +139,12 @@ vendor.qcom.bluetooth.soc=hastings
 debug.hwui.use_hint_manager=true
 debug.sf.enable_adpf_cpu_hint=true
 debug.hwui.target_cpu_time_percent=70
+debug.sf.latch_unsignaled=1
+ro.hwui.texture_cache_size=88
+ro.hwui.layer_cache_size=48
+ro.hwui.r_buffer_cache_size=16
+ro.hwui.path_cache_size=32
+ro.hwui.drop_shadow_cache_size=6
 
 # Chipset
 ro.soc.manufacturer=QTI
